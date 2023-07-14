@@ -4,12 +4,8 @@ interface HeroWrapperProps {
   children: ReactNode;
 }
 
-const HeroWrapper:React.FC<HeroWrapperProps> = ({ children }) => {
-  return (
-    <div className="flex justify-center items-center w-full max-w-screen-2xl h-[60vh] relative">
-      {children}
-    </div>
-  );
+const HeroWrapper: React.FC<HeroWrapperProps> = ({ children }) => {
+  return <div className="w-full h-full flex flex-col">{children}</div>;
 };
 
 export default HeroWrapper;

@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <Wrapper>
       <Hero/>
-      <About/>
       <Projects/>
+      <About/>
       {/* <div>Project</div>
       <div>Experience</div>
       <div>Contact</div>

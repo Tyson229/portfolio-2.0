@@ -28,18 +28,19 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-stone-100 text-zinc-700`}>
+      <body className={`${montserrat.className} bg-stone-100 text-zinc-700 flex flex-col items-center `}>
+        
         <Sidebar
           isOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
           linksList={SIDEBAR_LINKS}
         />
-        <div className={`${isSidebarOpen ? "blur-sm opacity-25 " : ""} z-0 md:blur-0 md:opacity-100 transition ease-in-out duration-300 relative`}>
-          <Header
-            title={TITLE}
-            linksList={LINKS_LIST}
-            handleSidebar={handleSidebar}
-          />
+        <div className={`${isSidebarOpen ? "blur-sm opacity-25 " : ""} z-0 md:blur-0 md:opacity-100 transition ease-in-out duration-300 relative flex flex-col items-center max-w-screen-xl`}>
+        <Header
+          title={TITLE}
+          linksList={LINKS_LIST}
+          handleSidebar={handleSidebar}
+        />
           {children}
           <Footer />
         </div>

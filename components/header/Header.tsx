@@ -10,7 +10,11 @@ interface HeaderProps {
   handleSidebar: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, linksList, handleSidebar }) => {
+const Header: React.FC<HeaderProps> = ({
+  title,
+  linksList,
+  handleSidebar,
+}) => {
   return (
     <HeaderWrapper>
       <HeaderTitle title={title} />
