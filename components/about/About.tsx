@@ -1,12 +1,16 @@
 import React from 'react'
 import SectionHeader from '../section_header/SectionHeader'
+import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className='w-full'>
+    <section className='w-full'>
       <SectionHeader title='about'/>
-      <div className='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, non tenetur quasi laudantium commodi officiis. Nemo hic, repellat ducimus placeat iure sapiente, mollitia quidem quas cumque accusamus vero, consequuntur eligendi.</div>
-    </div>
+      <div className='grid grid-cols-3'>
+        
+        <div className='col-span-2 items-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia doloribus delectus accusamus? Eos incidunt aspernatur ullam ipsam quaerat eum veniam eaque? Illum nobis debitis fugit unde ab temporibus, numquam et!</div>
+      </div>
+    </section>
   )
 }
 

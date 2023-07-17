@@ -2,7 +2,7 @@
 
 import { Montserrat } from "next/font/google";
 import "./global.css";
-import Header from "@/components/header/Header";
+import Header from "@/components/header/page";
 import Footer from "@/components/footer/Footer";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { useState } from "react";
@@ -28,14 +28,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-stone-100 text-zinc-700 flex flex-col items-center `}>
+      <body className={`${montserrat.className} bg-gradient-to-br from-zinc-800 to-stone-200 via-slate-800 text-white flex flex-col items-center `}>
         
         <Sidebar
           isOpen={isSidebarOpen}
           setIsSidebarOpen={setIsSidebarOpen}
           linksList={SIDEBAR_LINKS}
         />
-        <div className={`${isSidebarOpen ? "blur-sm opacity-25 " : ""} z-0 md:blur-0 md:opacity-100 transition ease-in-out duration-300 relative flex flex-col items-center max-w-screen-xl`}>
+        <div className={`${isSidebarOpen ? "blur-sm opacity-25 " : ""} z-0 md:blur-0 md:opacity-100 transition ease-in-out duration-300 relative flex flex-col items-center w-full`}>
         <Header
           title={TITLE}
           linksList={LINKS_LIST}

@@ -1,10 +1,10 @@
 import React from "react";
-import ProjectCard from "../project_card/ProjectCard";
-import { PROJECTS } from "../../../lib/data";
+import ProjectCard from "./ProjectCard";
+import { PROJECTS } from "../../lib/data";
 
 const ProjectList = () => {
   return (
-    <div className="flex flex-col md:grid grid-cols-3 gap-4 justify-center">
+    <div className="col-span-2 flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-2 justify-center ">
        {PROJECTS.map((project, index) => (
         <ProjectCard project={project} key={index} index={index}/>
       ))}

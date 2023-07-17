@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header/Header.tsx", "components/header/header-socials/_useHover.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/header/page.tsx", "components/header/_utils/_useHover.ts"],
   "exclude": ["node_modules"]
 }

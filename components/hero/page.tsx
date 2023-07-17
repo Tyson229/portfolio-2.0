@@ -1,7 +1,7 @@
 import React from "react";
-import HeroWrapper from "./hero-wrapper/HeroWrapper";
-import HeroBackground from "./hero-background/HeroBackground";
-import HeroIntroduction from "./hero-introduction/HeroIntroduction";
+import HeroWrapper from "./HeroWrapper";
+import HeroBackground from "./HeroBackground";
+import HeroIntroduction from "./HeroIntroduction";
 
 const Hero = () => {
   return (

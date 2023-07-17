@@ -7,7 +7,7 @@ import {
   PiGithubLogoFill,
   PiLinkedinLogoFill,
 } from "react-icons/pi";
-import useHover from "./_useHover";
+import useHover from "./_utils/_useHover";
 
 const HeaderSocials = ({ size, style }: { size: number; style?: string }) => {
   const linkHoverGitHub = useHover();

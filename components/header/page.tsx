@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderWrapper from "./header-wrapper/HeaderWrapper";
-import HeaderTitle from "./header-title/HeaderTitle";
-import HeaderLinksList from "./header-links-list/HeaderLinksList";
-import HeaderSocials from "./header-socials/HeaderSocials";
+import HeaderWrapper from "./HeaderWrapper";
+import HeaderTitle from "./HeaderTitle";
+import HeaderLinksList from "./HeaderLinksList";
+import HeaderSocials from "./HeaderSocials";
 
 interface HeaderProps {
   title: string;
