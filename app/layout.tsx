@@ -28,7 +28,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-gradient-to-br from-zinc-800 to-stone-200 via-slate-800 text-white flex flex-col items-center `}>
+      {/* <body className={`${montserrat.className} bg-zinc-800 text-stone-200 flex flex-col items-center `}>
         
         <Sidebar
           isOpen={isSidebarOpen}
@@ -44,6 +44,14 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+      </body> */}
+      <body className={`${montserrat.className} bg-zinc-800 text-stone-200 flex flex-col justify-center items-center bg-pattern bg-no-repeat bg-center bg-cover overflow-x-hidden`}>
+        <Header
+          title={TITLE}
+          linksList={LINKS_LIST}
+          handleSidebar={handleSidebar}
+        />
+        {children}
       </body>
     </html>
   );

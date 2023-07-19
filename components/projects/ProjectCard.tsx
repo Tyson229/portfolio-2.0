@@ -16,18 +16,18 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
-    <div className="flex flex-col sm:square h-auto gap-2 p-4 bg-black/50 rounded-md text-white drop-shadow-lg">
-      {/* <div className="absolute w-0 h-0 border-r-[50px] border-b-[50px] border-stone-100 bottom-0 right-0 "></div> */}
+    <div className="flex flex-col square gap-2 p-4 m-2 bg-zinc-700  rounded-md">
+      
       <div className="flex w-full gap-2"> 
-        <div className="text-center w-12 h-12 flex justify-center items-center p-2 text-3xl font-semibold  text-white">
+        <div className="text-center w-12 h-12 flex justify-center items-center p-2 text-3xl font-semibold ">
           {++index}
         </div>
         <div className="">
-          <div className="font-semibold text-white">{project.title}</div>
+          <div className="font-semibold">{project.title}</div>
           <div>
             {project.tech.map((t, i) => {
               return (
-                <span className="text-sm italic">
+                <span className="text-sm italic" key={i}>
                   {i < project.tech.length - 1 ? t.concat("-") : t}
                 </span>
               );

@@ -4,10 +4,7 @@ import ProjectList from "./ProjectList";
 
 const Projects = () => {
   return (
-    <section
-      className="flex flex-col xl:grid xl:grid-cols-3 gap-2 "
-      id="project"
-    >
+    <section className="flex flex-col gap-2 w-full ">
       <SectionHeader title="projects" />
       <ProjectList />
     </section>

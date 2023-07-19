@@ -9,4 +9,7 @@
   .rec {
     aspect-ratio: 3 / 1;
   }
+  .mobile {
+    aspect-ratio: 9/16;
+  }
 }
