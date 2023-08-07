@@ -5,7 +5,11 @@ interface HeroWrapperProps {
 }
 
 const HeroWrapper: React.FC<HeroWrapperProps> = ({ children }) => {
-  return <div className="w-full h-[100vh] md:h-[40vh] flex justify-center flex-col relative">{children}</div>;
+  return (
+    <section className="flex flex-col w-full max-w-screen-xl h-screen p-4 lg:p-8 gap-8">
+      {children}
+    </section>
+  );
 };
 
 export default HeroWrapper;

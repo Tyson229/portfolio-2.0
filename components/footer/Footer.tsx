@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <section className="w-full max-w-screen-2xl border-t border-t-gray-600 mt-8 grid grid-cols-2 p-4  opacity-70">
+    <section className="w-full max-w-screen-2xl mt-8 bg-black grid grid-cols-2 p-4">
       <div className="flex flex-col">
         <div className="text-lg">Tien Khoa Nguyen</div>
         <div className='text-sm'>ngyntienkhoa22999@gmail.com</div>  

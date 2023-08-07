@@ -6,7 +6,7 @@ interface WrapperProps {
 
 const Wrapper:React.FC<WrapperProps> = ({children}) => {
   return (
-    <div className='w-full max-w-screen-2xl flex flex-col p-4 items-center gap-4 lg:p-8'> 
+    <div className='w-full max-w-screen-2xl flex flex-col items-center snap-center'> 
       {children}
     </div>
   )

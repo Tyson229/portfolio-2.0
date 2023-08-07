@@ -16,9 +16,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
-    <div className="flex flex-col square gap-2 p-4 m-2 bg-zinc-700  rounded-md">
-      
-      <div className="flex w-full gap-2"> 
+    <div className="flex flex-col bg-stone-200 square sm:desktop gap-2 p-4">
+      <div className="flex w-full gap-2">
         <div className="text-center w-12 h-12 flex justify-center items-center p-2 text-3xl font-semibold ">
           {++index}
         </div>
@@ -36,9 +35,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         </div>
       </div>
 
-      <div className="text-sm text-justify grow ">{project.description}</div>
+      <div className="text-sm text-justify grow">{project.description}</div>
 
-      <div className="flex mt-3">
+      <div className="flex mt-3 p-2">
         <div className="bg-white"></div>
         <Link
           href={project.links.github}

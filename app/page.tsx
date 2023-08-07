@@ -8,11 +8,7 @@ export default function Home() {
   return (
     <Wrapper>
       <Projects />
-      <Tech />
-      <Contact/>
-      {/* <div>Experience</div>
-      <div>Contact</div>
-      <div>Achievements</div> */}
+      <Contact />
     </Wrapper>
   );
 }

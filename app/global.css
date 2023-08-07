@@ -4,12 +4,9 @@
 
 @layer utilities {
   .square {
-    aspect-ratio: 1 / 1 ;
+    aspect-ratio: 1 / 1;
   }
-  .rec {
-    aspect-ratio: 3 / 1;
-  }
-  .mobile {
-    aspect-ratio: 9/16;
+  .desktop {
+    aspect-ratio: 3/2;
   }
 }

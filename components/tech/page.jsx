@@ -5,27 +5,22 @@ import { BiLogoPhp, BiLogoTailwindCss, BiLogoReact } from "react-icons/bi";
 import { SiJavascript, SiTypescript, SiVite, SiMysql } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { DiSass } from "react-icons/di";
-import SectionHeader from "../section_header/SectionHeader";
 const Tech = () => {
   return (
-    <section className="w-full flex flex-col gap-2">
-      <SectionHeader title="Tech" />
-
-      <div className="w-full grid grid-cols-6 place-items-center md:flex gap-8 justify-center">
-        <AiOutlineHtml5 size={"auto"} />
-        <TbBrandCss3 size={"auto"} />
-        <SiJavascript size={"auto"} />
-        <SiTypescript size={"auto"} />
-        <FaJava size={"auto"} />
-        <BiLogoPhp size={"auto"} />
-        <DiSass size={"auto"} />
-        <BiLogoTailwindCss size={"auto"} />
-        <BiLogoReact size={"auto"} />
-        <TbBrandNextjs size={"auto"} />
-        <SiVite size={"auto"} />
-        <SiMysql size={"auto"} />
-      </div>
-    </section>
+    <div className="grid grid-cols-6 place-items-center md:flex md:flex-row gap-8 opacity-80 p-2">
+      <AiOutlineHtml5 size={"30"} />
+      <TbBrandCss3 size={"30"} />
+      <SiJavascript size={"30"} />
+      <SiTypescript size={"30"} />
+      <FaJava size={"30"} />
+      <BiLogoPhp size={"30"} />
+      <DiSass size={"30"} />
+      <BiLogoTailwindCss size={"30"} />
+      <BiLogoReact size={"30"} />
+      <TbBrandNextjs size={"30"} />
+      <SiVite size={"30"} />
+      <SiMysql size={"30"} />
+    </div>
   );
 };
 

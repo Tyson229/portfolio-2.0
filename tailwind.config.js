@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'pattern': "url('/pattern.svg')",
-      }
+        pattern: "url('/pattern.svg')",
+        profile: "url('/profile.jpg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
