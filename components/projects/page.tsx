@@ -7,8 +7,8 @@ import ProjectDescription from "./ProjectDescription";
 
 const Projects = () => {
   return (
-    <section className="flex flex-col gap-2 w-full justify-center p-4 max-w-screen-xl">
-      <SectionHeader title="projects"/>
+    <section className="flex flex-col gap-2 w-full justify-center items-center">
+      <SectionHeader title="projects" />
       <ProjectDescription />
       <Tech />
       <ProjectList />

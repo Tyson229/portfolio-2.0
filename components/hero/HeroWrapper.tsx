@@ -6,7 +6,7 @@ interface HeroWrapperProps {
 
 const HeroWrapper: React.FC<HeroWrapperProps> = ({ children }) => {
   return (
-    <section className="flex flex-col w-full max-w-screen-xl h-screen p-4 lg:p-8 gap-8">
+    <section className="flex flex-col w-full min-h-screen max-w-screen-2xl p-4 md:p-12">
       {children}
     </section>
   );

@@ -10,3 +10,19 @@
     aspect-ratio: 3/2;
   }
 }
+
+@keyframes dropDown {
+  0% {
+    width: 1px;
+    height: 0px;
+  }
+  100% {
+    width: 1px;
+    height: 100%;
+  }
+}
+
+.animate-dropDown {
+  animation: dropDown 100ms ease-in;
+  animation-fill-mode: forwards;
+}

@@ -15,7 +15,7 @@ const HeroTitle = () => {
       }`}
     >
       <BsCodeSlash size={25} />
-      <span>{USERNAME}</span>
+      <span className="text-md md:text-lg">{USERNAME}</span>
     </Link>
   );
 };

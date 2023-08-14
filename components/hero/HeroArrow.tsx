@@ -7,7 +7,7 @@ const HeroArrow = () => {
 
   return (
     <div
-      className={`self-end ${
+      className={`w-full justify-end items-center flex ${
         isAnimationStarted ? "animate-bounce" : "opacity-0"
       }`}
     >

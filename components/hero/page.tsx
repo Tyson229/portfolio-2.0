@@ -4,7 +4,6 @@ import React from "react";
 import HeroTitle from "./HeroTitle";
 import HeroWrapper from "./HeroWrapper";
 import HeroArrow from "./HeroArrow";
-import HeroAbout from "./HeroAbout";
 import HeroIntro from "./HeroIntro";
 import AnimationContext from "./_AnimationContext";
 
@@ -21,7 +20,6 @@ const Hero = () => {
       <HeroWrapper>
         <HeroTitle />
         <HeroIntro />
-        <HeroAbout />
         <HeroArrow />
       </HeroWrapper>
     </AnimationContext.Provider>
