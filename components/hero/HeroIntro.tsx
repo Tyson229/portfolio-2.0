@@ -10,23 +10,23 @@ const HeroIntro: React.FC = () => {
   return (
     <div className="w-full flex flex-col grow justify-center gap-2">
       <div
-        className={`text-3xl md:text-4xl animate-in fade-in slide-in-from-top-4 duration-500`}
+        className={`text-2xl md:text-3xl animate-in fade-in slide-in-from-top-4 duration-500 text-stone-500`}
       >
         HI,
       </div>
 
       <div
-        className={`text-3xl md:text-4xl animate-in fade-in slide-in-from-top-4 duration-500`}
+        className={`text-2xl md:text-3xl animate-in fade-in slide-in-from-top-4 duration-500 text-stone-500`}
       >
         YOU'VE JUST MET
       </div>
 
       <div
-        className={`text-7xl md:text-[7rem] w-full font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-blue-400 via-blue-500 to-blue-700 relative`}
+        className={`text-7xl md:text-[6rem] w-full font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500  relative`}
       >
         {/* First Layer */}
         <div
-          className={`h-full flex bg-gradient-to-tr from-blue-400 via-blue-500 to-blue-700 animate-in fade-in slide-in-from-top-4 absolute z-50 ${
+          className={`h-full flex bg-gradient-to-br from-gray-700 via-gray-600 to-gray-500 animate-in fade-in slide-in-from-top-4 absolute z-50 ${
             isAnimationStarted
               ? "w-0 transition-all delay-200 duration-200 ease-linear"
               : "w-full"
@@ -35,7 +35,7 @@ const HeroIntro: React.FC = () => {
           <span
             className={`text-white ${
               isAnimationStarted
-                ? "opacity-0 transition-all duration-200 ease-linear"
+                ? "opacity-0 transition-all duration-200 ease-linear hidden"
                 : "opacity-100"
             }`}
           >
@@ -44,7 +44,7 @@ const HeroIntro: React.FC = () => {
         </div>
         {/* Second Layer */}
         <div
-          className={`bg-blue-500 h-full animate-in fade-in slide-in-from-top-4 absolute z-40 ${
+          className={`bg-gray-600 h-full animate-in fade-in slide-in-from-top-4 absolute z-40 ${
             isAnimationStarted
               ? "w-0 transition-all delay-300 duration-200 ease-linear"
               : "w-full"
@@ -52,7 +52,7 @@ const HeroIntro: React.FC = () => {
         ></div>
         {/* Third Layer */}
         <div
-          className={`bg-blue-400 h-full animate-in fade-in slide-in-from-top-4 absolute z-30 ${
+          className={`bg-gray-500 h-full animate-in fade-in slide-in-from-top-4 absolute z-30 ${
             isAnimationStarted
               ? "w-0 transition-all delay-500 duration-200 ease-linear"
               : "w-full"
@@ -63,7 +63,7 @@ const HeroIntro: React.FC = () => {
       </div>
 
       <div
-        className={`text-md md:text-xl animate-in fade-in slide-in-from-top-4 duration-1000 `}
+        className={`text-md md:text-xl animate-in fade-in slide-in-from-top-4 duration-1000 text-stone-500`}
       >
         {TITLE.toUpperCase()}
       </div>

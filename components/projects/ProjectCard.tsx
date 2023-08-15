@@ -18,14 +18,14 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
-    rootMargin: "100px",
+    rootMargin: "-50px",
     triggerOnce: true,
   });
   return (
     <div
       ref={ref}
-      className={` h-[calc(25rem-30px)] flex flex-col gap-2 p-4 rounded-tr-2xl rounded-bl-2xl text-white relative ${
-        index % 2 == 0 ? "bg-sky-500" : "bg-sky-700"
+      className={` h-[calc(25rem-30px)] w-full flex flex-col gap-2 p-4 rounded-tr-2xl rounded-bl-2xl text-white relative ${
+        index % 2 == 0 ? "bg-stone-900" : "bg-slate-700"
       } ${
         inView
           ? "animate-in fade-in slide-in-from-bottom-10 duration-300 ease-linear"
@@ -56,14 +56,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         <div className="bg-white"></div>
         <Link
           href={project.links.github}
-          className="rec text-center text-sm font-semibold p-2 rounded-lg bg-stone-100 text-zinc-700 hover:scale-110 hover:bg-slate-800 hover:text-stone-100 transform-transition duration-200 ease-in-out mr-3 "
+          className="rec text-center text-sm font-semibold p-2 rounded-lg border border-stone-100 text-white hover:scale-110 hover:bg-pink-600 hover:border-none transform-transition duration-200 ease-in-out mr-3 "
         >
           GitHub
         </Link>
         {project.links.url !== "" ? (
           <Link
             href={project.links.url}
-            className="rec text-center text-sm font-semibold p-2 rounded-lg bg-stone-100 text-zinc-700 hover:scale-110 hover:bg-slate-800 hover:text-stone-100 transform-transition duration-200 ease-in-out mr-3"
+            className="rec text-center text-sm font-semibold p-2 rounded-lg bg-stone-100 text-zinc-700 hover:scale-110 hover:bg-pink-600 hover:text-stone-100 transform-transition duration-200 ease-in-out mr-3"
           >
             Visit
           </Link>

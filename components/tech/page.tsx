@@ -15,7 +15,7 @@ const Tech = () => {
     rootMargin: "-100px",
     triggerOnce: true,
   });
-  const itemClass = "text-[3em] md:text-[4em] text-slate-800";
+  const itemClass = "text-[3em] md:text-[3em] text-gray-700";
   const LOGOS = [
     <AiOutlineHtml5 className={`${itemClass}`} />,
     <TbBrandCss3 className={`${itemClass}`} />,

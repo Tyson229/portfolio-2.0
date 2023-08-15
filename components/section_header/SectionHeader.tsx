@@ -12,7 +12,7 @@ const SectionHeader = ({ title }: { title: string }) => {
   return (
     <div
       ref={ref}
-      className={`w-full flex flex-col font-bold text-2xl md:text-4xl mt-8 text-stone-800 ${
+      className={`w-full flex flex-col font-bold text-2xl md:text-4xl text-stone-800 ${
         inView
           ? "animate-in fade-in slide-in-from-left-20 duration-500 "
           : "opacity-0"
