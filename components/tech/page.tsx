@@ -17,18 +17,18 @@ const Tech = () => {
   });
   const itemClass = "text-[3em] md:text-[3em] text-gray-700";
   const LOGOS = [
-    <AiOutlineHtml5 className={`${itemClass}`} />,
-    <TbBrandCss3 className={`${itemClass}`} />,
-    <SiJavascript className={`${itemClass}`} />,
-    <SiTypescript className={`${itemClass}`} />,
-    <FaJava className={`${itemClass}`} />,
-    <BiLogoPhp className={`${itemClass}`} />,
-    <DiSass className={`${itemClass}`} />,
-    <BiLogoTailwindCss className={`${itemClass}`} />,
-    <BiLogoReact className={`${itemClass}`} />,
-    <TbBrandNextjs className={`${itemClass}`} />,
-    <SiVite className={`${itemClass}`} />,
-    <SiMysql className={`${itemClass}`} />,
+    <AiOutlineHtml5 className={`${itemClass}`} key={0} />,
+    <TbBrandCss3 className={`${itemClass}`} key={1} />,
+    <SiJavascript className={`${itemClass}`} key={2} />,
+    <SiTypescript className={`${itemClass}`} key={3} />,
+    <FaJava className={`${itemClass}`} key={4} />,
+    <BiLogoPhp className={`${itemClass}`} key={5} />,
+    <DiSass className={`${itemClass}`} key={6} />,
+    <BiLogoTailwindCss className={`${itemClass}`} key={7} />,
+    <BiLogoReact className={`${itemClass}`} key={8} />,
+    <TbBrandNextjs className={`${itemClass}`} key={9} />,
+    <SiVite className={`${itemClass}`} key={10} />,
+    <SiMysql className={`${itemClass}`} key={11} />,
   ];
   return (
     <div

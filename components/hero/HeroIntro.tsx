@@ -18,7 +18,7 @@ const HeroIntro: React.FC = () => {
       <div
         className={`text-2xl md:text-3xl animate-in fade-in slide-in-from-top-4 duration-500 text-stone-500`}
       >
-        YOU'VE JUST MET
+        YOU HAVE JUST MET
       </div>
 
       <div
