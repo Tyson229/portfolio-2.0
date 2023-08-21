@@ -3,6 +3,8 @@ import React, { useContext, useEffect, useState } from "react";
 import HeroSocials from "./HeroSocials";
 import { FULL_NAME, TITLE } from "@/lib/data";
 import AnimationContext from "./_AnimationContext";
+import Link from "next/link";
+import HeroDownloadButton from "./HeroDownloadButton";
 
 const HeroIntro: React.FC = () => {
   const isAnimationStarted = useContext(AnimationContext);
@@ -71,6 +73,7 @@ const HeroIntro: React.FC = () => {
       <HeroSocials
         properties={"flex animate-in fade-in slide-in-from-top-4 duration-1000"}
       />
+      <HeroDownloadButton/>
     </div>
   );
 };
