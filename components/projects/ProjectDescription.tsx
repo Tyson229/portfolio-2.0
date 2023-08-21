@@ -17,7 +17,7 @@ const ProjectDescription = () => {
           : "opacity-0"
       }`}
     >
-      I've completed a range of projects utilizing HTML, CSS, JavaScript, and
+      I have completed a range of projects utilizing HTML, CSS, JavaScript, and
       React. Notably, I developed a Sneaker eShop for seamless online shopping
       and a web-based Minesweeper game for classic entertainment. Leveraging the
       Google Books API, I crafted an app enabling easy book exploration.
