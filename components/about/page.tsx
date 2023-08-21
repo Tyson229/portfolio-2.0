@@ -12,7 +12,6 @@ const About = () => {
       <AboutDescription />
       <AboutEducation />
       <AboutAchievements />
-      <BreakLine/>
     </section>
   );
 };

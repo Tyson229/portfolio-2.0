@@ -11,6 +11,7 @@ import { PiPaperPlaneRightLight } from "react-icons/pi";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { GITHUB_LINK, LINKEDIN_LINK } from "@/lib/data";
+import BreakLine from "../breakLine/BreakLine";
 const Contact = () => {
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -67,6 +68,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <BreakLine/>
     </section>
   );
 };
