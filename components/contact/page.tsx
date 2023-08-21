@@ -44,7 +44,9 @@ const Contact = () => {
             <AiOutlineMail size={30} />
             <span className="font-semibold">Email me</span>
           </div>
-          <div>ngyntienkhoa22999@gmail.com</div>
+          <a href="mailto:ngyntienkhoa22999@gmail.com">
+            ngyntienkhoa22999@gmail.com
+          </a>
         </div>
         <div className="">
           <div>
