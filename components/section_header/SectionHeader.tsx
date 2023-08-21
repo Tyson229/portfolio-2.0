@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { AiOutlineProject } from "react-icons/ai";
 import { useInView } from "react-intersection-observer";
 
 const SectionHeader = ({ title }: { title: string }) => {

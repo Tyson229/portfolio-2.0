@@ -8,7 +8,7 @@ const HeroIntro: React.FC = () => {
   const isAnimationStarted = useContext(AnimationContext);
 
   return (
-    <div className="w-full flex flex-col grow justify-center gap-2">
+    <div className="w-full max-w-screen-xl flex flex-col grow justify-center gap-2">
       <div
         className={`text-2xl md:text-3xl animate-in fade-in slide-in-from-top-4 duration-500 text-stone-500`}
       >

@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className}  flex flex-col justify-center items-center bg-pattern bg-no-repeat bg-center bg-cover overflow-x-hidden`}
+        className={`${montserrat.className}  flex flex-col justify-center items-center  overflow-x-hidden`}
       >
         <Hero />
         {children}

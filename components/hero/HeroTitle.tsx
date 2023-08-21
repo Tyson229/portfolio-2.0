@@ -10,7 +10,7 @@ const HeroTitle = () => {
   return (
     <Link
       href={"/"}
-      className={`flex items-center gap-2 ${
+      className={`flex items-center gap-2 w-full ${
         isAnimationStarted ? "animate-in fade-in duration-1000" : "opacity-0"
       }`}
     >
